@@ -79,24 +79,25 @@ class FunctionsTest < MiniTest::Test
     assert_equal( "Oct", tenth_month_string )
   end
 
-  # #Further
-  #
-  # #Given the length of a side of a cube calculate the volume
+  #Further
+
+  #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
   volume = volume_of_cube( 3 )
   assert_equal(27, volume)
   end
-  #
-  # #Given the radius of a sphere calculate the volume
+
+  #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
   volume = volume_of_sphere ( 5 )
   assert_equal(523.6, volume)
   end
-  #
-  # #Given a value in farenheit, convert this into celsius.
-  # def test_fahrenheit_to_celsius()
-  #   #add test code here
-  # end
+
+  #Given a value in farenheit, convert this into celsius.
+  def test_fahrenheit_to_celsius()
+    celsius = fahrenheit_to_celsius( 44 )
+    assert_equal(6.7, celsius)
+  end
 
 
 end
